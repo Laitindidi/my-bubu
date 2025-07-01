@@ -1,31 +1,166 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>中文日历</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+<meta charset="UTF-8" />
+<title>789mxd信息网 - 简易版</title>
+<style>
+  body {
+    margin: 0; padding: 0; font-family: "微软雅黑", Arial, sans-serif;
+    background-color: #00b0ff;
+    color: #333;
+  }
+  header {
+    background: linear-gradient(90deg, #00bfff, #00dfff);
+    padding: 10px 20px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #004466;
+    display: flex; align-items: center;
+  }
+  header .title {
+    flex-grow: 1;
+  }
+  header .star {
+    width: 80px; height: 80px;
+    background: yellow;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: orange;
+    box-shadow: 0 0 10px orange;
+    user-select: none;
+  }
+  nav.info-links {
+    background: #fffbac;
+    color: #066;
+    padding: 6px 20px;
+    font-size: 14px;
+  }
+  nav.info-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007700;
+    font-weight: bold;
+  }
+  main {
+    padding: 10px 20px;
+    background-color: #ffec00;
+    overflow-x: auto;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+  }
+  thead tr {
+    background-color: #cc5500;
+    color: #fff;
+    font-weight: bold;
+  }
+  thead tr th {
+    padding: 6px 10px;
+    border: 1px solid #d68a00;
+    white-space: nowrap;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #ffe500;
+  }
+  tbody tr:nth-child(odd) {
+    background-color: #fff14d;
+  }
+  tbody tr td {
+    padding: 4px 6px;
+    border: 1px solid #d68a00;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .icon-fire {
+    color: red;
+    font-weight: bold;
+    margin-right: 4px;
+  }
+  .highlight-red {
+    color: #d40000;
+    font-weight: bold;
+  }
+  .btn-detail {
+    background-color: #ff6600;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .btn-detail:hover {
+    background-color: #cc3300;
+  }
+</style>
 </head>
 <body>
-  <h3>请选择时间范围：</h3>
-  <input type="text" id="daterange">
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<header>
+  <div class="title">789mxd信息网</div>
+  <div class="star">⭐</div>
+</header>
 
-  <script>
-    $('#daterange').daterangepicker({
-      locale: {
-        format: 'YYYY-MM-DD',
-        applyLabel: '确定',
-        cancelLabel: '取消',
-        daysOfWeek: ['日','一','二','三','四','五','六'],
-        monthNames: ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'],
-        firstDay: 1
-      },
-      opens: 'center'
-    });
-  </script>
+<nav class="info-links">
+  <a href="#">多渠道宣传最大</a>
+  <a href="#">高价收星</a>
+  <a href="#">联系QQ 79356350</a>
+  <a href="#">联系QQ 877556010</a>
+</nav>
+
+<main>
+  <table>
+    <thead>
+      <tr>
+        <th>服务器名称</th>
+        <th>服务器IP</th>
+        <th>开机时间</th>
+        <th>地区线路</th>
+        <th>客服QQ</th>
+        <th>版本介绍</th>
+        <th>详细介绍</th>
+        <th>推荐星级</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="icon-fire">🔥</span>079超变态 免费爽</td>
+        <td>公测刚开</td>
+        <td><span class="highlight-red">★7月/01日/大服推荐★</span></td>
+        <td>全部免费飘</td>
+        <td>送极品神装</td>
+        <td>15倍攻击速度 全图5倍轮回 全技能全屏攻击</td>
+        <td><a href="https://www.baidu.com" class="btn-detail" target="_blank">点击查看</a></td>
+        <td>品牌置顶</td>
+      </tr>
+      <tr>
+        <td><span class="icon-fire">🔥</span>枫之谷079内测刚开</td>
+        <td>BOSS独立推荐</td>
+        <td><span class="highlight-red">★7月/01日/大服推荐★</span></td>
+        <td>白嫖成神</td>
+        <td>1011056211</td>
+        <td>079独家玩法海量BOSS白嫖成神妹子多多人气火爆不肝不氪邀好友</td>
+        <td><a href="https://www.baidu.com" class="btn-detail" target="_blank">点击查看</a></td>
+        <td>品牌置顶</td>
+      </tr>
+      <tr>
+        <td><span class="icon-fire">🔥</span>新服示例服务器</td>
+        <td>192.168.1.1</td>
+        <td><span class="highlight-red">★7月/02日/新开服★</span></td>
+        <td>广东线路</td>
+        <td>123456789</td>
+        <td>高爆率，VIP特权多</td>
+        <td><a href="https://www.baidu.com" class="btn-detail" target="_blank">点击查看</a></td>
+        <td>推荐</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+
 </body>
 </html>
-
