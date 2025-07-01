@@ -1,116 +1,126 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8" />
-<title>789mxd信息网 - 简易版</title>
-<style>
-  body {
-    margin: 0; padding: 0; font-family: "微软雅黑", Arial, sans-serif;
-    background-color: #00b0ff;
-    color: #333;
-  }
-  header {
-    background: linear-gradient(90deg, #00bfff, #00dfff);
-    padding: 10px 20px;
-    color: white;
-    font-size: 36px;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #004466;
-    display: flex; align-items: center;
-  }
-  header .title {
-    flex-grow: 1;
-  }
-  header .star {
-    width: 80px; height: 80px;
-    background: yellow;
-    border-radius: 50%;
-    margin-left: 10px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 36px;
-    font-weight: bold;
-    color: orange;
-    box-shadow: 0 0 10px orange;
-    user-select: none;
-  }
-  nav.info-links {
-    background: #fffbac;
-    color: #066;
-    padding: 6px 20px;
-    font-size: 14px;
-  }
-  nav.info-links a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #007700;
-    font-weight: bold;
-  }
-  main {
-    padding: 10px 20px;
-    background-color: #ffec00;
-    overflow-x: auto;
-  }
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 12px;
-  }
-  thead tr {
-    background-color: #cc5500;
-    color: #fff;
-    font-weight: bold;
-  }
-  thead tr th {
-    padding: 6px 10px;
-    border: 1px solid #d68a00;
-    white-space: nowrap;
-  }
-  tbody tr:nth-child(even) {
-    background-color: #ffe500;
-  }
-  tbody tr:nth-child(odd) {
-    background-color: #fff14d;
-  }
-  tbody tr td {
-    padding: 4px 6px;
-    border: 1px solid #d68a00;
-    vertical-align: middle;
-    white-space: nowrap;
-  }
-  .icon-fire {
-    color: red;
-    font-weight: bold;
-    margin-right: 4px;
-  }
-  .highlight-red {
-    color: #d40000;
-    font-weight: bold;
-  }
-  .btn-detail {
-    background-color: #ff6600;
-    color: white;
-    padding: 2px 6px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 12px;
-  }
-  .btn-detail:hover {
-    background-color: #cc3300;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>19mxd信息网 - 冒险岛、QQ群推荐、开服信息</title>
+  <meta name="description" content="789mxd信息网收集最新手游服信息、枫之谷M台服交流QQ群、各类热门服务器推荐，免费快速加入高质量群聊。" />
+  <meta name="keywords" content="冒险岛, 台服, QQ群, 手游交流群, 免费开服, 高爆服, 789mxd" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://你的网址.github.io/" />
+  <style>
+    body {
+      margin: 0; padding: 0; font-family: "微软雅黑", Arial, sans-serif;
+      background-color: #00b0ff;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #00bfff, #00dfff);
+      padding: 10px 20px;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px #004466;
+      display: flex; align-items: center;
+    }
+    header .title {
+      flex-grow: 1;
+    }
+    header .star {
+      width: 80px; height: 80px;
+      background: yellow;
+      border-radius: 50%;
+      margin-left: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 36px;
+      font-weight: bold;
+      color: orange;
+      box-shadow: 0 0 10px orange;
+      user-select: none;
+    }
+    nav.info-links {
+      background: #fffbac;
+      color: #066;
+      padding: 6px 20px;
+      font-size: 14px;
+    }
+    nav.info-links a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #007700;
+      font-weight: bold;
+    }
+    main {
+      padding: 10px 20px;
+      background-color: #ffec00;
+      overflow-x: auto;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 12px;
+    }
+    thead tr {
+      background-color: #cc5500;
+      color: #fff;
+      font-weight: bold;
+    }
+    thead tr th {
+      padding: 6px 10px;
+      border: 1px solid #d68a00;
+      white-space: nowrap;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #ffe500;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #fff14d;
+    }
+    tbody tr td {
+      padding: 4px 6px;
+      border: 1px solid #d68a00;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .icon-fire {
+      color: red;
+      font-weight: bold;
+      margin-right: 4px;
+    }
+    .highlight-red {
+      color: #d40000;
+      font-weight: bold;
+    }
+    .btn-detail {
+      background-color: #ff6600;
+      color: white;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 12px;
+    }
+    .btn-detail:hover {
+      background-color: #cc3300;
+    }
+    .row-index {
+      color: #999;
+      font-size: 10px;
+      text-align: right;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-  <div class="title">789mxd信息网</div>
+  <div class="title">19mxd信息网</div>
   <div class="star">⭐</div>
 </header>
 
 <nav class="info-links">
   <a href="#">多渠道宣传最大</a>
   <a href="#">高价收星</a>
-  <a href="#">联系QQ 79356350</a>
-  <a href="#">联系QQ 877556010</a>
+  <a href="#">联系QQ 123456789</a>
+  <a href="#">联系QQ 123456789</a>
 </nav>
 
 <main>
@@ -128,6 +138,7 @@
       </tr>
     </thead>
     <tbody>
+      <!-- 第1行 -->
       <tr>
         <td><span class="icon-fire">🔥</span>枫之谷M 台服交流群</td>
         <td>QQ群火热</td>
@@ -140,8 +151,26 @@
             点击查看
           </a>
         </td>
-        <td>推荐加群</td>
+        <td>推荐加群 <div class="row-index">第1行</div></td>
       </tr>
+
+      <!-- 你可以继续复制下面这个模板，创建第2行、第3行... -->
+      <!-- 第2行（示例） -->
+      <tr>
+        <td><span class="icon-fire">🔥</span>示例游戏交流群</td>
+        <td>即将开放</td>
+        <td><span class="highlight-red">★7月/02日/新服推荐★</span></td>
+        <td>全国线路</td>
+        <td>QQ群：123456789</td>
+        <td>全新版本 高爆率 无需氪金</td>
+        <td>
+          <a href="https://jq.qq.com/?_wv=1027&k=dummycode" class="btn-detail" target="_blank">
+            点击查看
+          </a>
+        </td>
+        <td>人气新服 <div class="row-index">第2行</div></td>
+      </tr>
+
     </tbody>
   </table>
 </main>
