@@ -9,113 +9,138 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://你的网址.github.io/" />
   <style>
-    body {
-      margin: 0; padding: 0; font-family: "微软雅黑", Arial, sans-serif;
-      background-color: #00b0ff;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(90deg, #00bfff, #00dfff);
-      padding: 10px 20px;
-      color: white;
-      font-size: 36px;
-      font-weight: bold;
-      text-shadow: 1px 1px 2px #004466;
-      display: flex; align-items: center;
-    }
-    header .title {
-      flex-grow: 1;
-    }
-    header .star {
-      width: 80px; height: 80px;
-      background: yellow;
-      border-radius: 50%;
-      margin-left: 10px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 36px;
-      font-weight: bold;
-      color: orange;
-      box-shadow: 0 0 10px orange;
-      user-select: none;
-    }
-    nav.info-links {
-      background: #fffbac;
-      color: #066;
-      padding: 6px 20px;
-      font-size: 14px;
-    }
-    nav.info-links a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #007700;
-      font-weight: bold;
-    }
-    main {
-      padding: 10px 20px;
-      background-color: #ffec00;
-      overflow-x: auto;
-    }
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      font-size: 12px;
-    }
-    thead tr {
-      background-color: #cc5500;
-      color: #fff;
-      font-weight: bold;
-    }
-    thead tr th {
-      padding: 6px 10px;
-      border: 1px solid #d68a00;
-      white-space: nowrap;
-    }
-    tbody tr:nth-child(even) {
-      background-color: #ffe500;
-    }
-    tbody tr:nth-child(odd) {
-      background-color: #fff14d;
-    }
-    tbody tr td {
-      padding: 4px 6px;
-      border: 1px solid #d68a00;
-      vertical-align: middle;
-      white-space: nowrap;
-    }
-    .icon-fire {
-      color: red;
-      font-weight: bold;
-      margin-right: 4px;
-    }
-    .highlight-red {
-      color: #d40000;
-      font-weight: bold;
-    }
-    .btn-detail {
-      background-color: #ff6600;
-      color: white;
-      padding: 2px 6px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 12px;
-    }
-    .btn-detail:hover {
-      background-color: #cc3300;
-    }
-    .row-index {
-      color: #999;
-      font-size: 10px;
-      text-align: right;
-    }
-    footer {
-      background-color: #4c0000;
-      color: white;
-      text-align: center;
-      padding: 15px 10px;
-      font-size: 12px;
-      line-height: 1.6;
-    }
-  </style>
+  body {
+    margin: 0; padding: 0; font-family: "微软雅黑", Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
+  header {
+    background: linear-gradient(90deg, #00bfff, #00dfff);
+    padding: 10px 20px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #004466;
+    display: flex; align-items: center;
+  }
+  header .title {
+    flex-grow: 1;
+  }
+  header .star {
+    width: 80px; height: 80px;
+    background: yellow;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: orange;
+    box-shadow: 0 0 10px orange;
+    user-select: none;
+  }
+  nav.info-links {
+    background: #fffbac;
+    color: #066;
+    padding: 6px 20px;
+    font-size: 14px;
+  }
+  nav.info-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007700;
+    font-weight: bold;
+  }
+  main {
+    padding: 10px 20px;
+    background-color: #fff;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+  }
+  table {
+    border-collapse: collapse;
+    width: 1400px;
+    font-size: 12px;
+  }
+  thead tr {
+    background-color: #cc5500;
+    color: #fff;
+    font-weight: bold;
+  }
+  thead tr th {
+    padding: 6px 10px;
+    border: 1px solid #d68a00;
+    white-space: nowrap;
+  }
+  .secondary-header {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 14px;
+  }
+  tbody.primary tr:nth-child(even) {
+    background-color: #ffe500;
+  }
+  tbody.primary tr:nth-child(odd) {
+    background-color: #fff14d;
+  }
+  tbody.primary tr:hover {
+    background-color: #fff !important;
+  }
+  tbody.secondary tr:hover {
+    background-color: #fff14d !important;
+  }
+  td {
+    padding: 4px 6px;
+    border: 1px solid #d68a00;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .icon-fire {
+    color: red;
+    font-weight: bold;
+    margin-right: 4px;
+  }
+  .highlight-red {
+    color: #d40000;
+    font-weight: bold;
+  }
+  .btn-detail {
+    background-color: #ff6600;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .btn-detail:hover {
+    background-color: #cc3300;
+  }
+  .row-index {
+    color: #999;
+    font-size: 10px;
+    text-align: right;
+  }
+  .primary .red-text {
+    color: red;
+    font-weight: bold;
+  }
+  .secondary .purple-text {
+    color: #d400d4;
+    font-weight: bold;
+  }
+  footer {
+    background-color: #4c0000;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+</style>
+
 </head>
 <body>
 
@@ -145,40 +170,74 @@
         <th>推荐星级</th>
       </tr>
     </thead>
+    <tbody class="primary">
+      <!-- 一级广告位 -->
+       <!-- 序号1-->
+      <tr>
+        <td class="red-text"><span class="icon-fire">🔥</span>枫之谷M 台服交流群</td>
+        <td>QQ群火热</td>
+        <td class="red-text"><span class="highlight-red">★7月/01日/推荐★</span></td>
+        <td>手游专区</td>
+        <td>QQ群：477902018</td>
+        <td>台服交流攻略福利 欢迎新人</td>
+        <td><a href="#" class="btn-detail" target="_blank">点击查看</a></td>
+        <td>推荐加群 <div class="row-index"></div></td>
+      </tr>
+       <!-- 序号2-->      
+      <tr>
+        <td class="red-text"><span class="icon-fire">🔥</span>示例游戏交流群</td>
+        <td>即将开放</td>
+        <td class="red-text"><span class="highlight-red">★7月/02日/新服推荐★</span></td>
+        <td>全国线路</td>
+        <td>QQ群：123456789</td>
+        <td>全新版本 高爆率 无需氪金</td>
+        <td><a href="#" class="btn-detail" target="_blank">点击查看</a></td>
+        <td>人气新服 <div class="row-index"></div></td>
+      </tr>
+       <!-- 序号3-->      
+      <tr>
+        <td class="red-text"><span class="icon-fire">🔥</span>示例游戏交流群</td>
+        <td>即将开放</td>
+        <td class="red-text"><span class="highlight-red">★7月/02日/新服推荐★</span></td>
+        <td>全国线路</td>
+        <td>QQ群：123456789</td>
+        <td>全新版本 高爆率 无需氪金</td>
+        <td><a href="#" class="btn-detail" target="_blank">点击查看</a></td>
+        <td>人气新服 <div class="row-index"></div></td>
+      </tr>      
+    </tbody>
     <tbody>
-        <!-- === 一级广告位 START === -->
-      <!-- 第1行 -->
+      <!-- 横幅标语 -->
       <tr>
-        <!-- 服务器名称 --> <td><span class="icon-fire">🔥</span>枫之谷M 台服交流群</td>
-        <!-- 服务器IP --> <td>QQ群火热</td>
-        <!-- 开机时间 --> <td><span class="highlight-red">★7月/01日/推荐★</span></td>
-        <!-- 地区线路 --> <td>手游专区</td>
-        <!-- 客服QQ --> <td>QQ群：477902018</td>
-        <!-- 版本介绍 --> <td>台服交流攻略福利 欢迎新人</td>
-        <!-- 详细介绍 --> <td>
-          <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=TbpqUoIWHoaQRJD1ult_TjdmE1MECj67&authKey=DPty6za%2B36%2B9cbPOwa6Ff79kRBj7IrxBDQP%2BDe0AHueUwW8yDBmrAeLVew9MVojz&noverify=0&group_code=477902018" class="btn-detail" target="_blank">
-            点击查看
-          </a>
+        <td colspan="8" class="secondary-header">
+          ↑以上为本站强力推荐玩家首选→置顶←长久稳定品牌大区↑ ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ ↑以上为本站强力推荐玩家首选→置顶←长久稳定品牌大区↑
         </td>
-        <!-- 推荐星级 --> <td>推荐加群 <div class="row-index">第1行</div></td>
       </tr>
-
-      <!-- 第2行 -->
+    </tbody>
+    <tbody class="secondary">
+      <!-- 二级广告位示例 -->
+       <!-- 序号1 -->
       <tr>
-        <!-- 服务器名称 --> <td><span class="icon-fire">🔥</span>枫之谷M 台服交流群</td>
-        <!-- 服务器IP --> <td>QQ群火热</td>
-        <!-- 开机时间 --> <td><span class="highlight-red">★7月/01日/推荐★</span></td>
-        <!-- 地区线路 --> <td>手游专区</td>
-        <!-- 客服QQ --> <td>QQ群：477902018</td>
-        <!-- 版本介绍 --> <td>台服交流攻略福利 欢迎新人</td>
-        <!-- 详细介绍 --> <td>
-          <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=TbpqUoIWHoaQRJD1ult_TjdmE1MECj67&authKey=DPty6za%2B36%2B9cbPOwa6Ff79kRBj7IrxBDQP%2BDe0AHueUwW8yDBmrAeLVew9MVojz&noverify=0&group_code=477902018" class="btn-detail" target="_blank">
-            点击查看
-          </a>
-        </td>
-        <!-- 推荐星级 --> <td>推荐加群 <div class="row-index">第1行</div></td>
+        <td class="purple-text"><span class="icon-fire">🔥</span>二级推荐交流群</td>
+        <td>已上线</td>
+        <td class="purple-text"><span class="highlight-red">★7月/02日/活跃推荐★</span></td>
+        <td>全国高速</td>
+        <td>QQ群：987654321</td>
+        <td>活跃玩家聚集 每日福利</td>
+        <td><a href="#" class="btn-detail" target="_blank">点击查看</a></td>
+        <td>稳定推荐 <div class="row-index"></div></td>
       </tr>
-
+             <!-- 序号2 -->
+      <tr>
+        <td class="purple-text"><span class="icon-fire">🔥</span>二级推荐交流群</td>
+        <td>已上线</td>
+        <td class="purple-text"><span class="highlight-red">★7月/02日/活跃推荐★</span></td>
+        <td>全国高速</td>
+        <td>QQ群：987654321</td>
+        <td>活跃玩家聚集 每日福利</td>
+        <td><a href="#" class="btn-detail" target="_blank">点击查看</a></td>
+        <td>稳定推荐 <div class="row-index"></div></td>
+      </tr>
     </tbody>
   </table>
 </main>
